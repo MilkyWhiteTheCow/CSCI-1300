@@ -1,0 +1,19 @@
+// substring is a part of a string eg. (Hello) in "Hello World"
+// substrings are useful for several things e.g. (OC)  in Owen Carr where the substring is the initials
+// EXAM 1 THIS WEEK & NEXT (signed up for Tuesday @)
+// .@ or [] to get initials ??? 
+// substr() - inside the parathesis you can have position or length. for position start counting at 0. For length you start counting at 1.
+// e.g.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    string word = "Hello World!";
+cout << word.substr (4, 4);
+// this will output "o Wo"
+word.substr(word.substr(4, 3).length()); // summons just the length from the substring (3). When there is no length it just keeps going until it cant
+
+}
+// .substr() where parameters go into the parentheses. The paramaters are (position, length) where the console will output the string starting at the indicated starting position and for as long as the length indicates.
+// e.g. cout <<

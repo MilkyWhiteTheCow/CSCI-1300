@@ -1,0 +1,42 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int floor, actualFloor;
+    cout << "Floor: ";
+    cin >> floor;
+
+    if (floor > 13) 
+    {
+        actualFloor = floor - 1;
+
+
+
+
+    }
+    else 
+    {
+        actualFloor = floor;
+
+
+
+    }
+
+    cout << "The actual floor is floor" << actualFloor << "." << endl;
+
+    return(0);
+
+
+
+}
+
+//Option for short cut: define actual floor as floor before the if else statement. this way you don't have to use the else component
+// > - greater than
+// < - less than
+// >= - greater than or equal to
+// <= - less than or equal to
+// == - the same as ( do not use the single equal sign as they DONT WORK THE SAME)
+// != - NOT the same
+// 

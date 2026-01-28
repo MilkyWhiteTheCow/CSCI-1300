@@ -1,0 +1,28 @@
+// Variable are used to store values (e.g. stringgs integers floating point values)
+// Types of variables - 
+// boolean: true or false
+// float: numerical value with several decimal places
+// double: like float but wiht more data (decimal places)
+// char: a single letter/character from ASCII. Initialize with two single quotation makrss ''
+// string: a string of characters, useful for variable like usernames etc. Initialize with two normal quotation marks ""
+// COMMON ERRORS /3
+// ERROR 1/3: Compile Time Errors- syntax error. There is an issue with syntax of code, (typos, no semicolon at end of line missing initialization prefaces)
+// ERROR 2/3: Run Time Errors- Causes the program to take an action the programmer did not intend (cou << 1 / 0; CANT DIVIDE BY 0)
+// ERROR 3/3: Logic Errors: Causes a program to take an action that the programmer did not intend like misspelling hello world
+// errors after g++ ... = compile time error
+// errors where program crash = runtime error
+// Logic errors happen at run time but not all run time are logic
+// backslashes \ omit the next character as a keyword. cout << "\" 4 + 7 \"" << endl; OUTPUT = "4 + 7"
+// Algorithims are unambiguous, executable, and terminating
+// Building Blocks for computation:
+// 1. Create a variable
+// 2. Modify the value of a variable
+// 3. Get input or generate output
+// 4. Check if a statement is true or false
+// 5. repeat a statement or collection of statements
+// Variable Operators:
+// assignment operator - a single equal sign, it assigns values to variables (total_value = total_value + 2 notice how it does NOT mean equal to but instead assigns)
+// Arithmetic operators - integer math such as + - / 
+// arithmetic operators (modulus) - integer division doest keep decimals, so use modulus eg 18 % 2 to 9
+// increment/decrement operators - (my_int = my_int + 1;) the same as (my_int++)
+// 
