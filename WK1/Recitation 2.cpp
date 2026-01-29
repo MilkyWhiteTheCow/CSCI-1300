@@ -14,15 +14,15 @@ int main() {
 
     if (remainder == 1){
 
-        cout << "Your number is odd\n";
-        cout << "hello woooooorld\n";
+        cout << "Your number is odd";
+        cout << "hello woooooorld";
         cin >> null;
 
     }
     else{
 
-        cout << "Your number is even\n";
-        cout << "hello woooooorld\n";
+        cout << "Your number is even";
+        cout << "hello woooooorld";
         cin >> null;
 
     }

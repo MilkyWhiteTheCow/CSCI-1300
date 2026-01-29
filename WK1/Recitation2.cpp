@@ -12,7 +12,7 @@ int main() {
 
     remainder = number % 2;
 
-    if (number == 1){
+    if (remainder == 1){
 
         cout << "Your number is odd\n";
 
