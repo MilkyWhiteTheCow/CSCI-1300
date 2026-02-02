@@ -1,0 +1,17 @@
+#include<iostream>
+
+using namespace std;
+
+// Function Goal: Create a program that can modulate a baseline time for any-
+// given track using time spent braking(baseline), time spent on throttle(baseline),-
+// grip (potential to include downforce by multiplying grip by (Fdf +Fg)*grip)
+// and mass of the car
+
+int main() {
+
+    int minutes, seconds, hundreths;
+    double baselineMass, variableMass, baselineCoeffFriction, variableCoeffFriction, baselineDownforce, variableDownforce, timeThrottle, timeBraking, timeTurning;
+
+    //Take multiple times for throttle, braking, and turning. Also take distance driven, baseline coeffFriction and variable coeffFriction, baseline mass and variable mass, baseline downforce and variable downforce.
+
+}
