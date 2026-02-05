@@ -1,0 +1,30 @@
+#include<iostream>
+
+using namespace std;
+
+int main() {
+    
+    char brand;
+    
+    cout << "Enter the first letter of the company:" << endl;
+    cin >> brand;
+    
+    switch(brand) {
+        case 'B':
+            cout << "Automobile manufacturer chosen: BMW";
+            break;
+        case 'V':
+            cout << "Automobile manufacturer chosen: Volkswagen";
+            break;
+        case 'H':
+            cout << "Automobile manufacturer chosen: Honda";
+            break;
+        case 'T':
+            cout << "Automobile manufacturer chosen: Tesla";
+            break;
+        default:
+            cout << "Automobile manufacturer chosen: Invalid";
+            break;
+    }
+    return(0);
+}
