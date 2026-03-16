@@ -1,0 +1,11 @@
+// FUNCTIONS : hast to be declared before main function. They have parameters that can only be defined when function is called
+// prototypes are declared but undefined functions. You can have functions definied anywhere outside of main, even after main declaration w/ out definition.
+// you can also choose to omit parameter names in declaration.
+// Tell your user what they can and can't enter
+// Assume the user did not read what is written. use functions like isdigit() 
+// EX switch(isdigit(myChar)) {}
+// stoi() -string to an innt
+// Duplicate declerations = compile time error. When same name is used for variables twice 
+// if you name variables the same as parameters parameters becomes useless.
+// reference paramater changes the original argument. initialize argument as parameter
+// TO NOTE - void return types dont need a return value. 

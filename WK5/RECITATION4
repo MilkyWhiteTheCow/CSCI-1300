@@ -1,0 +1,44 @@
+// thursday 11-12 ECCS 114 office hours to do check in for checkpoint 2
+// for loop
+
+#include<iostream>
+
+using namespace std;
+
+double f(double x) {
+    double f_x;
+
+    f_x = x * x * x * x * x + x * x - 3 * x + 2;
+
+    return f_x;
+
+
+}
+/*
+int main() {
+
+    int range;
+    cin >> range;
+
+    double max_found;
+
+    for (int i = -range; i <= range; i++) {
+
+        double f_i = f(i);
+        if(f_i > max_found){
+            max_found = f_i;
+        }
+
+    }
+
+
+
+
+}
+    */
+
+int main() {
+    int x = 10;
+
+    while (x > 0);
+}
