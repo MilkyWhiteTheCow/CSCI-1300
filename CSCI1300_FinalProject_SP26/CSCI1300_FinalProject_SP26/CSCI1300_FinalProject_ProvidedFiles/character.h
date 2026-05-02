@@ -10,6 +10,14 @@ class Character
         int Luck;
 
     public:
+        Character C()
+        {
+            Number = 0;
+            Name = "";
+            Agility = 0;
+            Focus = 0;
+            Luck = 0;
+        }
         int getNumber()
         {
             return Number;
