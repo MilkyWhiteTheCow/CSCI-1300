@@ -7,36 +7,36 @@ using namespace std;
 
  void InitTransMatrix(double (&arr)[4][4], double Ps, double Pe, double Pi, double Pr)
     {
-        transmatrix[1][1] = Ps;
-        transmatrix[2][1] = 1 - Ps;
+        arr[1][1] = Ps;
+        arr[2][1] = 1 - Ps;
         for(int n = 1;n < 3; n++)
         {
-            transmatrix[n+2][1] = 0;
+            arr[n+2][1] = 0;
         }
 
-        transmatrix[1][2] = Pe;
-        transmatrix[2][1] = 0;
+        arr[1][2] = Pe;
+        arr[2][1] = 0;
         for(int n = 1;n < 3; n++)
         {
-            transmatrix[n+2][2] = (1-Pe)/2;
+            arr[n+2][2] = (1-Pe)/2;
         }
 
         for(int n = 1;n < 4; n++)
         {
-            transmatrix[n][3] = 0;
+            arr[n][3] = 0;
         }
-        transmatrix[4][3] = Pi;
+        arr[4][3] = Pi;
 
-        transmatrix[4][1] = 1 - Pr;
+        arr[4][1] = 1 - Pr;
         for(int n = 1;n < 3; n++)
         {
-            transmatrix[n+1][2] = 0;
+            arr[n+1][2] = 0;
         }
-        transmatrix[4][4] = Pr;
+        arr[4][4] = Pr;
 
     }
 
- void IterateStep(double reftransmmatrix& arr, double RefVec)
+ void IterateStep(double (&arr1)[4][4], double (&arr2)[4])
     {
 
     for(int i = 1; i < 5; i++)
@@ -46,23 +46,23 @@ using namespace std;
 
         for(int j = 1; j < 5; j++)
         {
-            sum += reftransmatrix[i][j] * RefVec[j];
+            sum += arr1[i][j] * arr2[j];
 
         }
 
-        RefVec[i] = sum;
+        arr2[i] = sum;
 
     }
 
     }
 
-     void InitRef();
+     void InitRef(double (&arr1)[4][4], double (&arr3)[4][4]);
     {
         for(int i = 1; i < 5; i++)
     {
         for(int j = 1; j < 5; j++)
         {
-            reftransmatrix[i][j] = transmatrix[i, j];
+            arr3[i][j] = arr1[i, j];
         }
     }
     }
