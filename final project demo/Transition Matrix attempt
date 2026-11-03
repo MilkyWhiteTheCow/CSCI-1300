@@ -5,7 +5,7 @@ using namespace std;
 
 
 
- void InitTransMatrix(double Ps, double Pe, double Pi, double Pr)
+ void InitTransMatrix(double (&arr)[4][4], double Ps, double Pe, double Pi, double Pr)
     {
         transmatrix[1][1] = Ps;
         transmatrix[2][1] = 1 - Ps;
