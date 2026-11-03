@@ -56,13 +56,13 @@ using namespace std;
 
     }
 
-     void InitRef(double (&arr1)[4][4], double (&arr3)[4][4]);
+     void InitRef(double (&arr1)[4][4], double (&arr3)[4][4])
     {
         for(int i = 1; i < 5; i++)
     {
         for(int j = 1; j < 5; j++)
         {
-            arr3[i][j] = arr1[i, j];
+            arr3[i][j] = arr1[i][j];
         }
     }
     }
@@ -91,8 +91,8 @@ int main(){
     cout << "What is Pr?" << endl;
     cin >> Pr;
 
-    InitTransMatrix(Ps, Pe, Pi, Pr);
-    InitRef();
+    InitTransMatrix(transmatrix, Ps, Pe, Pi, Pr);
+    InitRef(transmatrix, reftransmatrix);
 
     cout << "What is the Initial S value?" << endl;
     cin >> InitialVec[1] >> RefVec[1];
@@ -110,7 +110,7 @@ int main(){
 
     for(int i = 0; i < iterations; i++)
     {
-        IterateStep();
+        IterateStep(reftransmatrix, RefVec);
     }
 
      cout << "Your vector is " << endl;
