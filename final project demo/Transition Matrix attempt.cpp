@@ -39,20 +39,29 @@ using namespace std;
  void IterateStep(double (&arr1)[4][4], double (&arr2)[4])
     {
 
-    for(int i = 0; i < 4; i++)
-    {
+        double Vec[4] = {arr2[0], arr2[1], arr2[2], arr2[3]};
 
-        double sum = 0.0;
-
-        for(int j = 0; j < 4; j++)
+        for(int i = 0; i < 4; i++)
         {
-            sum += arr1[i][j] * arr2[j];
+
+            double sum = 0.0;
+
+            for(int j = 0; j < 4; j++)
+            {
+                sum += arr1[i][j] * Vec[j];
+
+            }
+
+            arr2[i] = sum;
 
         }
 
-        arr2[i] = sum;
+        double normal_sum = arr2[0] + arr2[1] + arr2[2] + arr2[3];
 
-    }
+        for(int i = 0; i < 4; i++)
+        {
+            arr2[i] /= normal_sum;
+        }
 
     }
 
