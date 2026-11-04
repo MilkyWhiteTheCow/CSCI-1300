@@ -42,7 +42,7 @@ using namespace std;
     for(int i = 0; i < 4; i++)
     {
 
-        int sum = 0;
+        double sum = 0.0;
 
         for(int j = 0; j < 4; j++)
         {
@@ -95,13 +95,13 @@ int main(){
     InitRef(transmatrix, reftransmatrix);
 
     cout << "What is the Initial S value?" << endl;
-    cin >> InitialVec[1] >> RefVec[1];
+    cin >> InitialVec[0] >> RefVec[0];
     cout << "What is the Initial E value?" << endl;
-    cin >> InitialVec[2] >> RefVec[2];
+    cin >> InitialVec[1] >> RefVec[1];
     cout << "What is the Initial I value?" << endl;
-    cin >> InitialVec[3] >> RefVec[3];
+    cin >> InitialVec[2] >> RefVec[2];
     cout << "What is the Initial R value?" << endl;
-    cin >> InitialVec[4] >> RefVec[4];
+    cin >> InitialVec[3] >> RefVec[3];
 
     cout << "How many iterations do you want to calculate?" << endl;
     cin >> iterations;
